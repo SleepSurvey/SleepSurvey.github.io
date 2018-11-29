@@ -143,10 +143,12 @@
         // Controls display of 'prev' button
         if(questionCounter === 1){
           $('#prev').show();
+          $('img').hide();
         } else if(questionCounter === 0){
           
           $('#prev').hide();
           $('#next').show();
+          $('img').hide();
         }
       }else {
         var scoreElem = displayScore();
@@ -154,6 +156,7 @@
         $('#next').hide();
         $('#prev').hide();
         $('#start').show();
+        $('img').show();
       }
     });
   }

@@ -8,8 +8,22 @@
     	awsC: 1,
     	awsD: 0
   }, {
+    question: "How would you rate your alcohol consumption habits? (sipping vs. handle pulls)",
+    choices: ["N/A", "Light", "Moderate", "Heavy"],
+      awsA: 3,
+      awsB: 2,
+      awsC: 1,
+      awsD: 0
+  }, {
     question: "How many times do you consume pharmaceutical drugs per week? (e.g. marajuana, cigarettes, ecstasy)",
     choices: ["N/A", "1-2 times", "3-4 times", "Almost everyday"],
+      awsA: 3,
+      awsB: 2,
+      awsC: 1,
+      awsD: 0
+  }, {
+    question: "How would you rate your drug comsumption habits?",
+    choices: ["N/A", "Light", "Moderate", "Heavy"],
       awsA: 3,
       awsB: 2,
       awsC: 1,
@@ -129,10 +143,12 @@
         // Controls display of 'prev' button
         if(questionCounter === 1){
           $('#prev').show();
+          $('img').hide();
         } else if(questionCounter === 0){
           
           $('#prev').hide();
           $('#next').show();
+          $('img').hide();
         }
       }else {
         var scoreElem = displayScore();
@@ -140,6 +156,7 @@
         $('#next').hide();
         $('#prev').hide();
         $('#start').show();
+        $('img').show();
       }
     });
   }
@@ -164,7 +181,7 @@
       }
     }
     
-    if (numCorrect >3) {
+    if (numCorrect >7) {
       score.append('You scored ' + numCorrect + ' out of ' +
                    questions.length * 3 + '. Based on your answers, your drug and/or alcohol consumption habits are at a level that has minimal effect on your sleeping habits. Studies show that consuming alcohol, even a few days after studying, can negatively affect your ability to recall said content even if your exam is a few days after drinking. Drugs can have a wide variety of effects on your body and sleep habits. MDMA, a popular drug amongst young people and college students, is a psychoactive drug that causes greater release of serotonin, which is the precursor to melatonin. This release causes a great depletion of the neurotransmitter important for sleep regulation. Users also report sleep-paralysis and night terrors as a common side-effect after an MDMA binge. Do not do drugs kids!');
       return score;

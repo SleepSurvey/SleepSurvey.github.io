@@ -8,15 +8,15 @@
     	awsC: 1,
     	awsD: 0
   }, {
-    question: "What time do you consume caffeinated food/beverages?",
-    choices: ["N/A", "8AM-12PM", "12PM-4PM", "after 4PM"],
+    question: "What time do you consume caffeinated substances? (e.g. coffee, tea, caffein pills",
+    choices: ["N/A", "Morning - Noon", "Noon - Afternoon", "Afternoon or After"],
       awsA: 3,
       awsB: 2,
       awsC: 1,
       awsD: 0
   }, {
     question: "How many hours before sleep do you consume caffeinated food/beverages?",
-    choices: ["N/A", "more than 5 hours", "3-5 hours", "0-2 hours"],
+    choices: ["N/A", "more than 5 hours before bedtime", "3-5 hours before bedtime", "0-2 hours before bedtime"],
       awsA: 3,
       awsB: 2,
       awsC: 1,
@@ -136,10 +136,12 @@
         // Controls display of 'prev' button
         if(questionCounter === 1){
           $('#prev').show();
+          $('img').hide();
         } else if(questionCounter === 0){
           
           $('#prev').hide();
           $('#next').show();
+          $('img').hide();
         }
       }else {
         var scoreElem = displayScore();
@@ -147,6 +149,7 @@
         $('#next').hide();
         $('#prev').hide();
         $('#start').show();
+        $('img').show();
       }
     });
   }
@@ -177,7 +180,7 @@
       return score;
     } else {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. It seems like you’re consuming a lot of caffeine! Try to dial back with your caffeine consumption habits to improve your sleeping habits! Adenosine is a neurotransmitter that makes us tired. Adenosine levels increase when we are awake and decrease when we are asleep. Due to its molecularly similar structure, caffeine can take the place of adenosine in adenosine receptors. Consuming too much caffeine or too close to bedtime can block adenosine’s ability to help you sleep!');
+                   questions.length * 3 + '. It seems like you are consuming a lot of caffeine! Try to dial back with your caffeine consumption habits to improve your sleeping habits! Adenosine is a neurotransmitter that makes us tired. Adenosine levels increase when we are awake and decrease when we are asleep. Due to its molecularly similar structure, caffeine can take the place of adenosine in adenosine receptors. Consuming too much caffeine or too close to bedtime can block adenosines ability to help you sleep!');
       return score;
     }
   }

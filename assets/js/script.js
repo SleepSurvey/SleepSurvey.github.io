@@ -8,19 +8,19 @@
     	awsC: 2,
     	awsD: 3
   }, {
-    question: "What time do you go to bed?",
-    choices: ["before 10PM", "10PM-12AM", "12AM-2AM", "after 2AM"],
-      awsA: 3,
-      awsB: 2,
-      awsC: 1,
-      awsD: 0
+    question: "How many hours of sleep do you think you need per night?",
+    choices: ["Less than 4 hours", "4-5 hours", "6-7 hours", "8 or more hours"],
+      awsA: 0,
+      awsB: 1,
+      awsC: 2,
+      awsD: 3
   }, {
-    question: "What time do you wake up?",
-    choices: ["before 8AM", "8AM-10AM", "10AM-12PM", "after 12PM"],
-      awsA: 3,
-      awsB: 2,
-      awsC: 1,
-      awsD: 0
+    question: "How do you usually feel when you wake up?",
+    choices: ["Extremeley tired", "Somewhat tired", "Indifferent", "Well-Rested; Ready to take on the day"],
+      awsA: 0,
+      awsB: 1,
+      awsC: 2,
+      awsD: 3
   }, {
     question: "WHow long do you take to fall asleep?",
     choices: ["I fall asleep easily/almost immediately", "It takes a couple of minutes", "It takes me more than 10 minutes", "I lie in bed for an hour or more before falling asleep"],
@@ -143,10 +143,12 @@
         // Controls display of 'prev' button
         if(questionCounter === 1){
           $('#prev').show();
+          $('img').hide();
         } else if(questionCounter === 0){
           
           $('#prev').hide();
           $('#next').show();
+          $('img').hide();
         }
       }else {
         var scoreElem = displayScore();
@@ -154,6 +156,7 @@
         $('#next').hide();
         $('#prev').hide();
         $('#start').show();
+        $('img').show();
       }
     });
   }
@@ -178,7 +181,7 @@
       }
     }
     
-    if (numCorrect <7) {
+    if (numCorrect <8) {
       score.append('You scored ' + numCorrect + ' out of ' +
                    questions.length * 3 + '. A survey given to Berkeley students shows that' + 
                    ' on average, students get around 6.5 hours of sleep per night, which is not ' + 
