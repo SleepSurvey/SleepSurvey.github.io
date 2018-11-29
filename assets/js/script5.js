@@ -187,7 +187,7 @@
       return score;
     } else {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. Pulling even one all-nighter can severely damage your memory abilities the following day, and the effects can last for several days at a time. Studies show that compared to students who did not pull an all-nighter, students who pulled an all-nighter the day before an exam did not perform as well. While some students take naps during the day to make up the amount of sleep lost during the all-nighter, the effects will not be compensated for. Not getting enough sleep will decrease your immune function, making it more likely for you to get sick, and also alter your hormone levels, making you at risk for weight gain and diabetes. Please refrain from pulling all nighters if possible!');
+                   questions.length * 3 + '. Pulling even one all-nighter can severely damage your memory abilities the following day, and the effects can last for several days at a time. Studies show that compared to students who did not pull an all-nighter, students who pulled an all-nighter the day before an exam did not perform as well. While some students take naps during the day to make up the amount of sleep lost during the all-nighter, the effects will not be compensated for. Not getting enough sleep will decrease your immune function, making it more likely for you to get sick, and also alter your hormone levels, making you at risk for weight gain and diabetes. Please refrain from pulling all-nighters if possible!');
       return score;
     }
   }

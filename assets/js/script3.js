@@ -176,7 +176,7 @@
     
     if (numCorrect >5) {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. Exercising several hours before bed is the best time to exercise because it allows our brains to return to baseline activity and eventually allow us to feel sleepy. Because brains are increasingly active during exercise, you should not exercise right before bed or you might risk feeling restless. You’re doing great by giving your brain enough time before bed to calm down!');
+                   questions.length * 3 + '. Exercising several hours before bed is the best time to exercise because it allows our brains to return to baseline activity and eventually allow us to feel sleepy. Because brains are increasingly active during exercise, you should not exercise right before bed or you might risk feeling restless. You’re doing great by giving your brain enough time before bed to calm down! If you don’t exercise, it is still recommended that you start exercising consistently because it correlates with benefits on your sleep quality and memory consolidation - just keep in mind not to exercise too close to bedtime! ');
       return score;
     } else {
       score.append('You scored ' + numCorrect + ' out of ' +

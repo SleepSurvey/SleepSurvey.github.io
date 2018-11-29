@@ -176,7 +176,7 @@
     
     if (numCorrect >5) {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. Your caffeine consumption habits should not impact your ability to fall asleep! Adenosine is a neurotransmitter that makes us tired. Adenosine levels increase when we are awake and decrease when we are asleep. Due to its molecularly similar structure, caffeine can take the place of adenosine in adenosine receptors. Consuming too much caffeine or too close to bedtime can block adenosines ability to help you sleep! Keep up with your caffeine habbits!');
+                   questions.length * 3 + '. Nice! Your caffeine consumption habits should not impact your ability to fall asleep! Adenosine is a neurotransmitter that makes us tired. Adenosine levels increase when we are awake and decrease when we are asleep. Due to its molecularly similar structure, caffeine can take the place of adenosine in adenosine receptors. Consuming too much caffeine or too close to bedtime can block adenosines ability to help you sleep!');
       return score;
     } else {
       score.append('You scored ' + numCorrect + ' out of ' +

@@ -183,29 +183,11 @@
     
     if (numCorrect <8) {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. A survey given to Berkeley students shows that' + 
-                   ' on average, students get around 6.5 hours of sleep per night, which is not ' + 
-                   'the adequate amount of sleep we should be getting.  Humans on average need at ' + 
-                   'least 8 hours of sleep per night to be at optimal functioning level. Getting ' + 
-                   'enough sleep will keep your physical, as well as mental, health balanced. ' + 
-                   'Additionally, getting enough sleep can help improve memory consolidation and ' + 
-                   'maybe even inspire creativity. If you only get below 6 hours of sleep per night ' + 
-                   'on average, there can be detrimental effects to your memory consolidation abilities, ' + 
-                   'as well as your physical and mental health. Physically, not getting enough sleep ' + 
-                   'has been shown to affect your metabolism and immune system negatively. Please try ' + 
-                   'to get more sleep!');
+                   questions.length * 3 + '. Oh no! A survey given to Berkeley students shows that on average, students get around 6.8 hours of sleep per night, which is not the adequate amount of sleep we should be getting. If you only get below 6 hours of sleep per night on average, there can be detrimental effects to your memory consolidation abilities, as well as your physical and mental health. Physically, not getting enough sleep has been shown to affect your metabolism and immune system negatively. Please try to get more sleep!');
       return score;
     } else {
       score.append('You scored ' + numCorrect + ' out of ' +
-                   questions.length * 3 + '. Humans on average need at least 8 hours of ' + 
-                   'sleep per night to be at optimal functioning level. Getting ' + 
-                   'enough sleep will keep your physical, as well as mental, health balanced. ' + 
-                   'Additionally, getting enough sleep can help improve memory consolidation and ' + 
-                   'maybe even inspire creativity. If you only get below 6 hours of sleep per night ' + 
-                   'on average, there can be detrimental effects to your memory consolidation abilities, ' + 
-                   'as well as your physical and mental health. Physically, not getting enough sleep ' + 
-                   'has been shown to affect your metabolism and immune system negatively. You are doing ' + 
-                   'great by getting enough sleep; keep on sleeping well!');
+                   questions.length * 3 + '. Awesome! Humans on average need at least 8 hours of sleep per night to be at optimal functioning level. Getting enough sleep will keep your physical, as well as mental, health balanced. Additionally, getting enough sleep can help improve memory consolidation and maybe even inspire creativity. If you only get below 6 hours of sleep per night on average, there can be detrimental effects to your memory consolidation abilities, as well as your physical and mental health. You are doing great by getting enough sleep; keep on sleeping well!');
       return score;
     }
   }
