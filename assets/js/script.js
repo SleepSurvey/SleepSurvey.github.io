@@ -16,13 +16,13 @@
       awsD: 3
   }, {
     question: "How do you usually feel when you wake up?",
-    choices: ["Extremeley tired", "Somewhat tired", "Indifferent", "Well-Rested; Ready to take on the day"],
+    choices: ["Extremely tired", "Somewhat tired", "Indifferent", "Well-Rested; Ready to take on the day"],
       awsA: 0,
       awsB: 1,
       awsC: 2,
       awsD: 3
   }, {
-    question: "WHow long do you take to fall asleep?",
+    question: "How long do you take to fall asleep?",
     choices: ["I fall asleep easily/almost immediately", "It takes a couple of minutes", "It takes me more than 10 minutes", "I lie in bed for an hour or more before falling asleep"],
       awsA: 3,
       awsB: 2,
