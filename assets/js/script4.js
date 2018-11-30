@@ -15,14 +15,14 @@
       awsC: 1,
       awsD: 0
   }, {
-    question: "How many times do you consume pharmaceutical drugs per week? (e.g. marajuana, cigarettes, ecstasy)",
+    question: "How many times do you consume drugs per week? (e.g. marijuana, cigarettes, ecstasy)",
     choices: ["N/A", "1-2 times", "3-4 times", "Almost everyday"],
-      awsA: 3,
-      awsB: 2,
+      awsA: 3
+,      awsB: 2,
       awsC: 1,
       awsD: 0
   }, {
-    question: "How would you rate your drug comsumption habits?",
+    question: "How would you rate your drug consumption habits?",
     choices: ["N/A", "Light", "Moderate", "Heavy"],
       awsA: 3,
       awsB: 2,
